@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"  rel="stylesheet"/>
+    <title>payment page</title>
+    <link  href="style.payment.css"  rel="stylesheet"/>
+    
+</head>
+<body >
+
+    <div class="container-fluid ps-4 pe-4 ps-lg-0 pe-lg-3 pt-4 pt-lg-0 pb-4 pb-lg-0">
+        <div class="row ">
+            <div class="col-5">
+                <div class="colored-box position-relative d-none d-lg-block">
+                    <div class="front-side p-3 " >
+                        <img src="./images/card-logo 1.png" class="logo" style="margin-bottom:92px;">
+                        <p class="card-number">9591 6489 6321 1023</p>
+                        <div class="d-flex align-items-center justify-content-between"  >
+                            <p class="mb-0 Nik">Nick Monkey</p>
+                            <span>12/23</span>
+                        </div>
+                    </div>
+                   <div class="back-side d-flex align-items-center  justify-content-end" >
+                        <p class="CVC mb-0">044</p>
+                   </div>
+                    
+                </div>
+            </div>
+            <div class="col-12 col-lg-7">
+                <div class="row align-items-start align-items-lg-center justify-content-end row-1" style="height: 982px " >
+                    <div class="col-12 col-lg-8"  >
+                        <div class="d-block d-lg-none d-flex justify-content-start">
+                            <div class="front-side-2 p-3 mb-3" >
+                                <img src="./images/card-logo 1.png" class="logo" style="margin-bottom:92px;">
+                                <p class="card-number">9591 6489 6321 1023</p>
+                                <div class="d-flex align-items-center justify-content-between"  >
+                                    <p class="mb-0 Nik">Nick Monkey</p>
+                                    <span>12/23</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="d-flex justify-content-end d-block d-lg-none">
+                            <div class="back-side-2 d-flex align-items-center  justify-content-end" >
+                                <p class="CVC mb-0">044</p>
+                           </div>
+                        </div>
+                        
+                        <div class="form-box d-flex flex-column align-items-center align-items-lg-start " >
+                            
+                            <form action="#" class="col-lg-10" > 
+                                <div class="input-1">
+                                    <label for="text" class="mt-3"> Card Number</label>
+                                    <input type="text" id="Number" placeholder="1234 3231 2341 2231" class="form-control w-100" >
+                                    <p id="error-1" class="mb-0 mt-1"></p>
+                                </div>
+                                <div class="input-2">
+                                    <label for="text"> Name</label>
+                                    <input type="text" id="Fulname" placeholder="Nick Monkey" class="form-control w-100" >
+                                    
+                                </div>
+                                <div class="d-flex align-items-center input-3">
+                                    <div class=" w-50" >
+                                        <div class="  " style="width:70%;">
+                                            <label for="text"> Exp Date</label>
+                                            <div class="d-flex gap-3">
+                                                <input type="text" id="Number2" placeholder="12" class="form-control text-center w-100" >
+                                                <input type="text" id="Number3" placeholder="23" class="form-control text-center w-100" >
+                                            </div>   
+                                        </div>
+                                        
+                                    </div>
+                                    <div class=" w-50">
+                                        <label for="text"> CVC</label>
+                                        <input type="text" id="Number4" placeholder="044" class="form-control w-100" >
+                                       
+                                    </div>
+                                </div>
+                                
+
+                                <button type="button" class="btn w-100" onclick="numberValidationFunc() ">confirm</button>
+                            </form>
+                        </div>
+                        
+                    </div>
+                </div>
+                        
+
+
+            </div>
+        </div>
+    </div>
+
+    <script src="js-payment-page.js"></script>
+</body>
+</html>
